@@ -12,4 +12,6 @@ class News extends Model
     public function pagerBean(){
     	return $this->belongsTo('App\Models\PageBean','pageToken','pageToken');
     }
+
+    
 }

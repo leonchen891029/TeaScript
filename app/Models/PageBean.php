@@ -11,4 +11,9 @@ class PageBean extends Model
     public function news(){
     	return $this->hasMany('App\Models\News','pageToken','pageToken');
     }
+
+    public static function getPageBean($pageToken){
+    	return PageBean::where('pageToken',$pageToken)->first();
+    }
+    
 }

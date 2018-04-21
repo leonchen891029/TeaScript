@@ -20,4 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 //资讯的相关路由
 //资讯相关路由
-Route::get('news/pageToken={pageToken}','NewsController@show');
+Route::get('news','NewsController@getNewsData');
