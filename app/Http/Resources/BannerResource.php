@@ -6,7 +6,7 @@ use Illuminate\Http\Resources\Json\Resource;
 
 use Carbon\carbon;
 
-class NewsResource extends Resource
+class BannerResource extends Resource
 {
     /**
      * Transform the resource into an array.
@@ -18,7 +18,7 @@ class NewsResource extends Resource
     {
         return [
                 'result'=>[
-                    "itemsList"=>$this->news,
+                    "itemsList"=>$this->banner,
                     "nextPageToken"=>$this->nextPageToken,
                     "prevPageToken"=>$this->prevPageToken,
                     "pageInfo"=>[
@@ -27,9 +27,8 @@ class NewsResource extends Resource
                     ]
                 ],
                 'code'=>1,
-                'message'=>'资讯列表获取成功',
+                'message'=>'Banner列表获取成功',
                 'time'=>Carbon::now(),
             ];
     }
-
 }

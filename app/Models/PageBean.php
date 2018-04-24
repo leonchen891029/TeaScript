@@ -12,6 +12,10 @@ class PageBean extends Model
     	return $this->hasMany('App\Models\News','pageToken','pageToken');
     }
 
+    public function banner(){
+    	return $this->hasMany('App\Models\Banner','pageToken','pageToken');
+    }
+
     public static function getPageBean($pageToken){
     	return PageBean::where('pageToken',$pageToken)->first();
     }

@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Models\PageBean;
 
-use App\Http\Resources\NewsResource;
+use App\Http\Resources\BannerResource;
 
-class NewsController extends Controller
+class BannerController extends Controller
 {
-    public function getNewsData(Request $request){
+    public function getBannerList(Request $request){
 
         $pageToken=$request->input('pageToken');
 
@@ -20,11 +20,11 @@ class NewsController extends Controller
         	return [
                 'result'=>'',
                 'code'=>0,
-                'message'=>'资讯列表获取失败',
-                'time'=>Carbon::now(),
+                'message'=>'Banner列表获取失败',
+                'time'=>'00:00',
             ];
         }else{
-        	return new NewsResource($pageBean);
+        	return new BannerResource($pageBean);
         }
     	
     }
