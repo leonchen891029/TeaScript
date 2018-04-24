@@ -21,7 +21,7 @@ class NewsController extends Controller
                 'result'=>'',
                 'code'=>0,
                 'message'=>'资讯列表获取失败',
-                'time'=>Carbon::now(),
+                'time'=>'nono',
             ];
         }else{
         	return new NewsResource($pageBean);

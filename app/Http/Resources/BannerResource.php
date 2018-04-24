@@ -14,8 +14,8 @@ class BannerResource extends Resource
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-    public function toArray($request)
-    {
+    public function toArray($request){
+
         return [
                 'result'=>[
                     "itemsList"=>$this->banner,
@@ -28,7 +28,7 @@ class BannerResource extends Resource
                 ],
                 'code'=>1,
                 'message'=>'Banner列表获取成功',
-                'time'=>Carbon::now(),
-            ];
+                'time'=>'nono',
+        ];
     }
 }
