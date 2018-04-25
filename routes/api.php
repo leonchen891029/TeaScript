@@ -18,8 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//资讯的相关路由
+//资讯列表的相关路由
 Route::get('news','NewsController@getNewsData');
+
+//资讯详情的相关路由
+Route::get('news/detail','NewsDetailController@getNewsDetailData');
+
+
 
 //获取Banner的相关路由
 Route::get('banner','BannerController@getBannerList');

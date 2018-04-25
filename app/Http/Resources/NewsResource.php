@@ -28,7 +28,7 @@ class NewsResource extends Resource
                 ],
                 'code'=>1,
                 'message'=>'资讯列表获取成功',
-                'time'=>'nono',
+                'time'=>Carbon::now()->toDateTimeString()
             ];
     }
 

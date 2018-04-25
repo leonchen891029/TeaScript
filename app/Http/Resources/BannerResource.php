@@ -28,7 +28,7 @@ class BannerResource extends Resource
                 ],
                 'code'=>1,
                 'message'=>'Banner列表获取成功',
-                'time'=>'nono',
+                'time'=>Carbon::now()->toDateTimeString()
         ];
     }
 }

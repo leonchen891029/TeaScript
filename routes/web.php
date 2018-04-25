@@ -14,7 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-//资讯的相关路由
-//资讯相关路由
-Route::get('news/?pageToken={pageToken}','NewsController@show');
