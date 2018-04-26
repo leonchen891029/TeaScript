@@ -24,7 +24,8 @@ Route::get('news','NewsController@getNewsData');
 //资讯详情的相关路由
 Route::get('news/detail','NewsDetailController@getNewsDetailData');
 
-
+//博客列表的相关路由
+Route::get('blog','BlogController@getBlogData');
 
 //获取Banner的相关路由
 Route::get('banner','BannerController@getBannerList');

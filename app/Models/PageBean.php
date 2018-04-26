@@ -16,6 +16,10 @@ class PageBean extends Model
     	return $this->hasMany('App\Models\Banner','pageToken','pageToken');
     }
 
+     public function blog(){
+        return $this->hasMany('App\Models\Blog','pageToken','pageToken');
+    }
+
     public static function getPageBean($pageToken){
     	return PageBean::where('pageToken',$pageToken)->first();
     }

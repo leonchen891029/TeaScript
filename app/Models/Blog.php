@@ -12,4 +12,8 @@ class Blog extends Model
     	$this->hasMany('App\Models\About','blog_id','id');
     }
 
+    public function pagebean(){
+    	$this->hasMany('App\Models\About','pageToken','pageToken');
+    }
+
 }
