@@ -12,4 +12,8 @@ class About extends Model
     	return $this->belongsTo('App\Models\News','id','news_id');
     }
 
+    public function blog(){
+    	return $this->belongsTo('App\Models\Blog','id','blog_id');
+    }
+
 }

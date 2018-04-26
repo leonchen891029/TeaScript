@@ -25,4 +25,8 @@ class News extends Model
     	return $this->hasOne('App\Models\Software','id','id');
     }
 
+    public function comment(){
+        return $this->hasMany('App\Models\Comment','news_id','id');
+    }
+
 }
