@@ -17,7 +17,7 @@ class BannersTableTestSeeder20180424 extends Seeder
         	'img'=>'www.teascript.cn/image/teascript.png',
         	'href'=>'www.teascript.cn/teascript.php',
         	'pubDate'=>'2018-4-24 05-15-00',
-        	'type'=>'1',
+        	'type'=>'0',
         	'pageToken'=>'alliancelodaakke',
         ]);
 
@@ -27,17 +27,17 @@ class BannersTableTestSeeder20180424 extends Seeder
         	'img'=>'www.teascript.cn/image/tvm.png',
         	'href'=>'www.teascript.cn/tvm.php',
         	'pubDate'=>'2018-4-24 05-20-00',
-        	'type'=>'1',
+        	'type'=>'0',
         	'pageToken'=>'alliancelodaakke',
         ]);
 
         DB::table('banners')->insert([
-        	'name'=>'TeaScript IDE',
-        	'detail'=>'TeaScript IDE',
-        	'img'=>'www.teascript.cn/image/ide.png',
+        	'name'=>'Tea3D',
+        	'detail'=>'Tea3D',
+        	'img'=>'www.teascript.cn/image/tea3d.png',
         	'href'=>'www.teascript.cn/ide.php',
         	'pubDate'=>'2018-4-24 05-25-00',
-        	'type'=>'1',
+        	'type'=>'0',
         	'pageToken'=>'alliancelodaakke',
         ]);
 

@@ -13,7 +13,7 @@ class News extends Model
         return News::find($id);
     }
 
-    public function pagerBean(){
+    public function pageBean(){
     	return $this->belongsTo('App\Models\PageBean','pageToken','pageToken');
     }
 

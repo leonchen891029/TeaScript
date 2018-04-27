@@ -12,6 +12,10 @@ class Comment extends Model
     	$this->belongTo('App\Models\News','id','news_id');
     }
 
+    public function blog(){
+    	$this->belongTo('App\Models\Blog','id','blog_id');
+    }
+
     public function refer(){
     	$this->hasOne('App\Models\Refer','comment_id','id');
     }

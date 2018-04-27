@@ -6,7 +6,11 @@ use Illuminate\Http\Resources\Json\Resource;
 
 class BlogResource extends Resource
 {
-    return [
+
+
+  public function toArray($request)
+    {
+           return [
             'result'=>[
                 "itemsList"=>$this->blog,
                 "nextPageToken"=>$this->nextPageToken,
@@ -19,5 +23,7 @@ class BlogResource extends Resource
             'code'=>1,
             'message'=>'资讯列表获取成功',
             'time'=>Carbon::now()->toDateTimeString()
-    ];
+        ];
+    }
+ 
 }
