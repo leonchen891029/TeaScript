@@ -33,5 +33,8 @@ Route::get('blog/detail','BlogDetailController@getBlogDetailData');
 //问答列表相关路由
 Route::get('question','QuestionController@getQuestionData');
 
+//问答详情相关路由
+Route::get('question/detail','QuestionDetailController@getQuestionDetailData');
+
 //获取Banner的相关路由
 Route::get('banner','BannerController@getBannerList');

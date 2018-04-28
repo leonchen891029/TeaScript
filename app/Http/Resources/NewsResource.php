@@ -18,7 +18,7 @@ class NewsResource extends Resource
     {
         return [
                 'result'=>[
-                    "itemsList"=>$this->news,
+                    "itemsList"=>$this->news()->where('id',2)->get(),
                     "nextPageToken"=>$this->nextPageToken,
                     "prevPageToken"=>$this->prevPageToken,
                     "pageInfo"=>[
