@@ -10,7 +10,7 @@ class Question extends Model
     protected $hidden=['pageToken','created_at','updated_at'];
 
     //通过id获取Question对象
-    public static function($id){
+    public static function getQuestion($id){
     	return Question::find($id);
     }
 
