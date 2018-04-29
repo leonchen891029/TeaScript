@@ -39,5 +39,8 @@ Route::get('question/detail','QuestionDetailController@getQuestionDetailData');
 //活动列表相关路由
 Route::get('event','EventController@getEventData');
 
+//活动详情相关路由
+Route::get('event/detail','EventDetailController@getEventDetailData');
+
 //获取Banner的相关路由
 Route::get('banner','BannerController@getBannerList');
