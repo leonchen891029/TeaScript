@@ -29,8 +29,8 @@ class QuestionDetailResource extends Resource
                 "viewCount"=>$this->viewCount,
                 "favorite"=>$this->favorite,
                 "href"=>$this->href,
-                "type"=>$this->type
-                "tags"=>$this->questionTags;
+                "type"=>$this->type,
+                "tags"=>$this->questionTags
             ],
             'code'=>1,
             'message'=>'问答详情获取成功',

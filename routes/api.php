@@ -18,6 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//用户登录相关路由
+Route::get('login','LoginController@login');
+
 //资讯列表的相关路由
 Route::get('news','NewsController@getNewsData');
 
@@ -44,3 +47,7 @@ Route::get('event/detail','EventDetailController@getEventDetailData');
 
 //获取Banner的相关路由
 Route::get('banner','BannerController@getBannerList');
+
+//获取Teatime列表的相关路由
+Route::get('teatime','TeatimeController@getTeatimeData');
+

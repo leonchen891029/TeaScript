@@ -16,12 +16,12 @@ class Question extends Model
 
     //设置与QuestionPageBean的一对多的关系
     public function questionPageBean(){
-    	return $this->belongTo('App\Model\QuestionPageBean','pageToken','pageToken');
+    	return $this->belongTo('App\Models\QuestionPageBean','pageToken','pageToken');
     }
 
     //设置与QuestionTags的一对多关系
     public function questionTags(){
-    	return $this->hasMany('App\Model\QuestionTags','question_id','id');
+    	return $this->hasMany('App\Models\QuestionTags','question_id','id');
     }
     
 }

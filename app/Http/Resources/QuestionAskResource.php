@@ -4,6 +4,8 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\Resource;
 
+use Carbon\Carbon;
+
 class QuestionAskResource extends Resource
 {
     /**

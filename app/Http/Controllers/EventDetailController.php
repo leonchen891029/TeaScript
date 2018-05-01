@@ -26,7 +26,7 @@ class EventDetailController extends Controller
                 'time'=>Carbon::now()->toDateTimeString()
 			];
     	}else{
-    		return new EventDetailResources($event);
+    		return new EventDetailResource($event);
     	}
 
     }

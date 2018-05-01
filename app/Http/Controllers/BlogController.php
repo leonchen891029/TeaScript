@@ -38,7 +38,7 @@ class BlogController extends Controller
 			$pageToken=$request->input('pageToken');
 
 			if(!$pageToken){
-				$pageToken="blognormaldefault"
+				$pageToken="blognormaldefault";
 			}
 
 			$pageBean=PageBean::getPageBean($pageToken);

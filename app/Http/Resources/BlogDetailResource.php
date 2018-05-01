@@ -16,8 +16,6 @@ class BlogDetailResource extends Resource
      */
     public function toArray($request)
     {
-           public function toArray($request)
-    {
         return [
                 'result'=>[
                     "id"=>$this->id,
@@ -31,7 +29,7 @@ class BlogDetailResource extends Resource
                     "recommend"=>$this->recommend,
                     "original"=>$this->original,
                     "type"=>$this->type,
-                    "viewType"=>$this->viewType
+                    "viewType"=>$this->viewType,
                     "favorite"=>$this->favorite,
                     "authorId"=>$this->authorId,
                     "authorPortrait"=>$this->authorPortrait,
@@ -43,8 +41,6 @@ class BlogDetailResource extends Resource
                 'code'=>1,
                 'message'=>'博客详情获取成功',
                 'time'=>Carbon::now()->toDateTimeString()
-            ];
-    }
-
+        ];
     }
 }

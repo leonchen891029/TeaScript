@@ -4,6 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\QuestionPageBean;
+
+use App\Http\Resources\QuestionAskResource;
+
+use App\Http\Resources\QuestionShareResource;
+
+use App\Http\Resources\QuestionCompositeResource;
+
+use App\Http\Resources\QuestionProfessionResource;
+
+use App\Http\Resources\QuestionWebsiteResource;
+
 class QuestionController extends Controller
 {
     //获取问答数据
